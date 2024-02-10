@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+
+    <div id="story" class="container">
+        <svg
+          id="first"
+          class="show svgwrapper"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 132.29166 132.29167"
+          height="100%"
+          width="100%"
+        >
+          <defs>
+            <!-- SQUIGGLY FILTERS -->
+            <filter id="squiggly-0">
+              <feturbulence
+                basefrequency="0.02"
+                id="turbulence-0"
+                numoctaves="3"
+                result="noise-0"
+                seed="0"
+              ></feturbulence>
+              <fedisplacementmap
+                id="displacement-0"
+                in2="noise-0"
+                in="SourceGraphic"
+                scale="2"
+              ></fedisplacementmap>
+            </filter>
+            <filter id="squiggly-1">
+              <feturbulence
+                basefrequency="0.02"
+                id="turbulence-1"
+                numoctaves="3"
+                result="noise-1"
+                seed="1"
+              ></feturbulence>
+              <fedisplacementmap
+                id="displacement-1"
+                in2="noise-1"
+                in="SourceGraphic"
+                scale="3"
+              ></fedisplacementmap>
+            </filter>
+            <filter id="squiggly-2">
+              <feturbulence
+                basefrequency="0.02"
+                id="turbulence-2"
+                numoctaves="3"
+                result="noise-2"
+                seed="2"
+              ></feturbulence>
+              <fedisplacementmap
+                id="displacement-2"
+                in2="noise-2"
+                in="SourceGraphic"
+                scale="2"
+              ></fedisplacementmap>
+            </filter>
+            <filter id="squiggly-3">
+              <feturbulence
+                basefrequency="0.02"
+                id="turbulence-3"
+                numoctaves="3"
+                result="noise-3"
+                seed="3"
+              ></feturbulence>
+              <fedisplacementmap
+                id="displacement-3"
+                in2="noise-3"
+                in="SourceGraphic"
+                scale="3"
+              ></fedisplacementmap>
+            </filter>
+            <filter id="squiggly-4">
+              <feturbulence
+                basefrequency="0.02"
+                id="turbulence-4"
+                numoctaves="3"
+                result="noise-4"
+                seed="4"
+              ></feturbulence>
+              <fedisplacementmap
+                id="displacement-4"
+                in2="noise-4"
+                in="SourceGraphic"
+                scale="1"
+              ></fedisplacementmap>
+            </filter>
+  
+            <!-- SVG DEFAULT FILTER -->
+            <filter id="filter" style="color-interpolation-filters: sRGB">
+              <feTurbulence
+                result="turbulence"
+                baseFrequency="0.01 0.025"
+                seed="512"
+                numOctaves="10"
+                type="fractalNoise"
+              />
+              <feDisplacementMap
+                xChannelSelector="R"
+                yChannelSelector="G"
+                scale="0"
+                in2="turbulence"
+                in="SourceGraphic"
+              />
+            </filter>
+          </defs>
+  
+          <!-- Text with filters applied -->
+          <text x="95" y="18" transform="rotate(18)" font-size="3" fill="black">
+            ^_^
+          </text>
+          <text x="40" y="55" font-size="10" fill="black">Dear Jam,</text>
+          <text x="78" y="60" font-size="3" fill="black">(part 2)</text>
+        </svg>
+  
+        <svg
+          id="second"
+          class="svgwrapper"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 132.29166 132.29167"
+          height="100%"
+          width="100%"
+        >
+          <!-- Text with filters applied -->
+          <text x="35" y="55" font-size="10" fill="black">Did you know?</text>
+        </svg>
+  
+        <svg
+          id="third"
+          class="svgwrapper"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 132.29166 132.29167"
+          height="100%"
+          width="100%"
+        >
+          <!-- Text with filters applied -->
+          <text x="40" y="50" font-size="10" fill="black">I love you</text>
+          <text x="40" y="60" font-size="10" fill="black">very much</text>
+          <text x="94" y="15" transform="rotate(18)" font-size="3" fill="black">
+              > <
+            </text>
+        </svg>
+  
+        <svg
+          id="fourth"
+          class="svgwrapper"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 132.29166 132.29167"
+          height="100%"
+          width="100%"
+        >
+          <!-- Text with filters applied -->
+          <text x="7" y="50" font-size="10" fill="black">you're the person i want</text>
+          <text x="17" y="60" font-size="10" fill="black">to spend my life with.</text>
+        </svg>
+  
+        <svg
+          id="fifth"
+          class="svgwrapper"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 132.29166 132.29167"
+          height="100%"
+          width="100%"
+        >
+          <!-- Text with filters applied -->
+          <text x="20" y="50" font-size="10" fill="black">i've got something</text>
+          <text x="38" y="60" font-size="10" fill="black">to ask you..</text>
+        </svg>
+
+      <div class="btnwrapper" id="btn1" style="width: 65%">
+        <button class="nextbtn">Next ></button>
+      </div>
+
+      <div class="btnwrapper" id="btn2" style="width: 70%">
+        <button class="nextbtn">what... ></button>
+      </div>
+
+      <div class="btnwrapper" id="btn3" style="width: 68%">
+        <button class="nextbtn">and... ></button>
+      </div>
+
+      <div class="btnwrapper" id="btn4" style="width: 75%">
+        <button class="nextbtn">so... ></button>
+      </div>
+
+      <div class="btnwrapper" id="btn5" style="width: 70%">
+        <button class="nextbtn">o_O... ></button>
+      </div>
+    </div>
+        
+    <div id="qwrapper" class="container">
+        <div
+        class="container"
+        >
+        <div style="display: flex; justify-content: center; z-index: -1;">
+  
+        <img src="https://media1.tenor.com/m/mvTL8ggxk2kAAAAC/chibicat-chibicatt.gif" alt="">
+  
+        </div>
+          <svg
+          
+          
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 132.29166 132.29167"
+          height="20%"
+          width="100%"
+        >
+          <text x="-140" y="50" font-size="50" fill="black">will u be</text>
+          <text x="-40" y="100" font-size="50" fill="black">my valentine?</text>
+        </svg>
+
+        
+
+        </div>
+
+        <div>
+          
+        </div>
+    </div>
+
+    <div id="choicewrapper" class="buttons">
+      <button class="yes" id="yesBtn">Yes</button>
+      <button class="no" id="noBtn">No</button>
+    </div>
+    
+    <script>
+      const firstText = document.getElementById("first");
+      const secondText = document.getElementById("second");
+      const thirdText = document.getElementById("third");
+      const fourthText = document.getElementById("fourth");
+      const fifthText = document.getElementById("fifth");
+      const question = document.getElementById("qwrapper");
+      const story = document.getElementById("story");
+      const container = document.getElementById("choicewrapper")
+
+      const button1 = document.getElementById("btn1");
+      const button2 = document.getElementById("btn2");
+      const button3 = document.getElementById("btn3");
+      const button4 = document.getElementById("btn4");
+      const button5 = document.getElementById("btn5");
+
+      const yes = document.getElementById("yesBtn");
+      const no = document.getElementById("noBtn");
+      
+      firstText.style.visibility = "visible";
+
+      function chase () {
+      const maxX = (container.offsetWidth - no.offsetWidth)-150;
+      const maxY = container.offsetHeight - no.offsetHeight;
+      const randomX = Math.random() * maxX;
+      const randomY = Math.random() * maxY;
+
+      no.style.left=randomX+'px';
+      no.style.top=randomY+'px';
+      console.log(maxX,maxY,randomX);
+      }
+
+      function nextPage(){
+        window.location.href="yes.html"
+      }
+
+      function firstSecond() {
+        firstText.classList.remove("show");
+        firstText.classList.add("hide");
+
+        button1.classList.remove("show");
+        button1.classList.add("hide");
+
+        setTimeout(function () {
+          firstText.style.visibility = "hidden";
+          button1.style.visibility = "hidden";
+
+          secondText.classList.add("show");
+          secondText.style.visibility = "visible";
+          setTimeout(function () {
+            button2.classList.add("show");
+            button2.style.visibility = "visible";
+          }, 2000);
+        }, 2000);
+      }
+
+      function secondThird() {
+        secondText.classList.remove("show");
+        secondText.classList.add("hide");
+
+        button2.classList.remove("show");
+        button2.classList.add("hide");
+
+        setTimeout(function () {
+          secondText.style.visibility = "hidden";
+          button2.style.visibility = "hidden";
+
+          thirdText.classList.add("show");
+          thirdText.style.visibility = "visible";
+          setTimeout(function () {
+            button3.classList.add("show");
+            button3.style.visibility = "visible";
+          }, 2000);
+        }, 2000);
+      }
+
+      function thirdFourth() {
+        thirdText.classList.remove("show");
+        thirdText.classList.add("hide");
+
+        button3.classList.remove("show");
+        button3.classList.add("hide");
+
+        setTimeout(function () {
+            thirdText.style.visibility = "hidden";
+            button3.style.visibility = "hidden";
+
+          fourthText.classList.add("show");
+          fourthText.style.visibility = "visible";
+          setTimeout(function () {
+            button4.classList.add("show");
+            button4.style.visibility = "visible";
+          }, 2000);
+        }, 2000);
+      }
+
+      function fourthFifth() {
+        fourthText.classList.remove("show");
+        fourthText.classList.add("hide");
+
+        button4.classList.remove("show");
+        button4.classList.add("hide");
+
+        setTimeout(function () {
+            fourthText.style.visibility = "hidden";
+            button4.style.visibility = "hidden";
+
+            fifthText.classList.add("show");
+          fifthText.style.visibility = "visible";
+          setTimeout(function () {
+            button5.classList.add("show");
+            button5.style.visibility = "visible";
+          }, 2000);
+        }, 2000);
+      }
+
+      function fifthLast() {
+        story.classList.remove("show");
+        story.classList.add("hide");
+
+        setTimeout(function () {
+            story.style.display = "none";
+            
+            question.classList.add("show");
+            question.style.display = "flex";
+
+          setTimeout(function () {
+            container.style.display = "flex"
+            container.classList.add("show")
+          }, 2000);
+        }, 2000);
+      }
+
+      button1.addEventListener("click", firstSecond);
+      button2.addEventListener("click", secondThird);
+      button3.addEventListener("click", thirdFourth);
+      button4.addEventListener("click", fourthFifth);
+      button5.addEventListener("click", fifthLast);
+      no.addEventListener("mouseover", chase);
+      yes.addEventListener("click",nextPage)
+
+
+
+
+      setTimeout(function () {
+        button1.classList.add("show");
+        button1.style.visibility = "visible";
+      }, 2000);
+    </script>
+  </body>
+</html>
